@@ -1,0 +1,161 @@
+Microsoft Windows [Version 10.0.22631.4460]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Acer>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 14D8-02F7
+
+ Directory of C:\Users\Acer
+
+01/21/2025  12:27 PM    <DIR>          .
+11/23/2024  07:52 PM    <DIR>          ..
+12/31/2024  07:09 AM    <DIR>          .anaconda
+12/18/2024  10:43 AM               268 .bash_history
+12/31/2024  07:16 AM    <DIR>          .conda
+12/31/2024  07:09 AM               146 .condarc
+12/31/2024  07:09 AM    <DIR>          .continuum
+12/18/2024  10:32 AM               202 .gitconfig
+12/03/2024  10:50 AM    <DIR>          .ipython
+12/18/2024  10:32 AM                20 .lesshst
+12/24/2024  10:28 AM    <DIR>          .matplotlib
+11/26/2024  09:30 AM    <DIR>          .vscode
+12/31/2024  07:18 AM    <DIR>          anaconda3
+10/08/2024  01:17 AM    <DIR>          Contacts
+12/24/2024  10:00 PM    <DIR>          Documents
+01/27/2025  09:38 PM    <DIR>          Downloads
+10/08/2024  01:17 AM    <DIR>          Favorites
+10/08/2024  01:17 AM    <DIR>          Links
+10/08/2024  01:17 AM    <DIR>          Music
+01/28/2025  11:24 AM    <DIR>          OneDrive
+10/08/2024  01:17 AM    <DIR>          Saved Games
+10/08/2024  02:12 AM    <DIR>          Searches
+12/09/2024  09:04 PM    <DIR>          Videos
+01/21/2025  12:27 PM    <DIR>          week1_tutorial
+               4 File(s)            636 bytes
+              20 Dir(s)  425,610,461,184 bytes free
+
+C:\Users\Acer>cd week1_tutorial
+
+C:\Users\Acer\week1_tutorial>python -m venv venv
+
+C:\Users\Acer\week1_tutorial>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 14D8-02F7
+
+ Directory of C:\Users\Acer\week1_tutorial
+
+01/21/2025  12:27 PM    <DIR>          .
+01/21/2025  12:27 PM    <DIR>          ..
+01/21/2025  12:27 PM    <DIR>          venv
+               0 File(s)              0 bytes
+               3 Dir(s)  425,610,444,800 bytes free
+
+C:\Users\Acer\week1_tutorial>venv\scripts\activate
+
+(venv) C:\Users\Acer\week1_tutorial>python -version
+Unknown option: -e
+usage: python [option] ... [-c cmd | -m mod | file | -] [arg] ...
+Try `python -h' for more information.
+
+(venv) C:\Users\Acer\week1_tutorial>Deactivate
+C:\Users\Acer\week1_tutorial>venv\scripts\activate
+
+(venv) C:\Users\Acer\week1_tutorial>python -version
+Unknown option: -e
+usage: python [option] ... [-c cmd | -m mod | file | -] [arg] ...
+Try `python -h' for more information.
+
+(venv) C:\Users\Acer\week1_tutorial>deactivate
+C:\Users\Acer\week1_tutorial>pip -version
+
+Usage:
+  pip <command> [options]
+
+no such option: -e
+
+C:\Users\Acer\week1_tutorial>pip install requests
+Requirement already satisfied: requests in c:\users\acer\appdata\local\programs\python\python313\lib\site-packages (2.32.3)
+Requirement already satisfied: charset-normalizer<4,>=2 in c:\users\acer\appdata\local\programs\python\python313\lib\site-packages (from requests) (3.4.1)
+Requirement already satisfied: idna<4,>=2.5 in c:\users\acer\appdata\local\programs\python\python313\lib\site-packages (from requests) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in c:\users\acer\appdata\local\programs\python\python313\lib\site-packages (from requests) (2.3.0)
+Requirement already satisfied: certifi>=2017.4.17 in c:\users\acer\appdata\local\programs\python\python313\lib\site-packages (from requests) (2024.12.14)
+
+[notice] A new release of pip is available: 24.2 -> 25.0
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+C:\Users\Acer\week1_tutorial>python.exe -m pip install --upgrade pip
+Requirement already satisfied: pip in c:\users\acer\appdata\local\programs\python\python313\lib\site-packages (24.2)
+Collecting pip
+  Downloading pip-25.0-py3-none-any.whl.metadata (3.7 kB)
+Downloading pip-25.0-py3-none-any.whl (1.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 108.0 kB/s eta 0:00:00
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 24.2
+    Uninstalling pip-24.2:
+      Successfully uninstalled pip-24.2
+Successfully installed pip-25.0
+
+C:\Users\Acer\week1_tutorial>
+C:\Users\Acer\week1_tutorial>pip show requests
+Name: requests
+Version: 2.32.3
+Summary: Python HTTP for Humans.
+Home-page: https://requests.readthedocs.io
+Author: Kenneth Reitz
+Author-email: me@kennethreitz.org
+License: Apache-2.0
+Location: C:\Users\Acer\AppData\Local\Programs\Python\Python313\Lib\site-packages
+Requires: certifi, charset-normalizer, idna, urllib3
+Required-by:
+
+C:\Users\Acer\week1_tutorial>pip uninstall requests
+Found existing installation: requests 2.32.3
+Uninstalling requests-2.32.3:
+  Would remove:
+    c:\users\acer\appdata\local\programs\python\python313\lib\site-packages\requests-2.32.3.dist-info\*
+    c:\users\acer\appdata\local\programs\python\python313\lib\site-packages\requests\*
+Proceed (Y/n)?
+  Successfully uninstalled requests-2.32.3
+
+C:\Users\Acer\week1_tutorial>python
+Python 3.13.0 (tags/v3.13.0:60403a5, Oct  7 2024, 09:38:07) [MSC v.1941 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> name = "Alice"
+>>> print("Hello," + name +"+")
+Hello,Alice+
+>>> a=10
+>>> b=5
+>>> sum=a+b
+>>> print("The sum is:",sum)
+The sum is: 15
+>>> name=input("Enter your name:")
+Enter your name:Pratiksha Tamang
+>>> print("Hello,"+name+"!Welcome to python programming.")
+Hello,Pratiksha Tamang!Welcome to python programming.
+>>> num1=float(input("Enter the first number:"))
+Enter the first number:5
+>>> num2=float(input("Enter the second number:"))
+Enter the second number:4
+>>> result=num1+num2
+>>> print("The sum is:",result)
+The sum is: 9.0
+>>> principal=float(input("Enter the principal amount:"))
+Enter the principal amount:1000
+>>> rate=float(input("Enter the rate of interest:"))
+Enter the rate of interest:3
+>>> time=float(input("Enter the time(in years):"))
+Enter the time(in years):2
+>>> simple_interest=(principal*rate*time)/100
+>>> print("The Simple Interest is:",simple_interest)
+The Simple Interest is: 60.0
+>>> celsius=float(input("Enter temperature in celsius:"))
+Enter temperature in celsius:29
+>>> fahrenheit=(celsius*9/5)+32
+>>> print("Temperature in Fahrenheit:",fahrenheit)
+Temperature in Fahrenheit: 84.2
+>>> name=input("What is your name?")
+What is your name?Pratiksha Tamang
+>>> print("Welcome,"+name+name+"!")
+Welcome,Pratiksha TamangPratiksha Tamang!
+>>>
